@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tic-Tac-Toe</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Tic-Tac-Toe</h1>
+  <div class="toggle-container">
+    <button id="toggleMode">Mode: Player vs AI</button>
+  </div>
+  <div class="difficulty-container">
+    <label for="difficulty">Difficulty:</label>
+    <select id="difficulty">
+      <option value="easy">Easy 🟢</option>
+      <option value="hard">Hard 🔴</option>
+    </select>
+  </div>
+  <div id="gameStatus">Player X's Turn</div>
+  <div id="board"></div>
+  <button id="restart">Restart</button>
+  <div class="scoreboard">
+    Score - X: <span id="scoreX">0</span> | O: <span id="scoreO">0</span>
+  </div>
+
+  <audio id="clickSound" src="https://www.fesliyanstudios.com/play-mp3/387"></audio>
+  <audio id="winSound" src="https://www.fesliyanstudios.com/play-mp3/6678"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
